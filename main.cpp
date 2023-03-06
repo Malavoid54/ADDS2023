@@ -12,9 +12,9 @@ int main(){
     Computer computer;
     Player* winner = referee1.refGame(&one, &computer);
     if (winner == &one) {
-        cout << one.getName() << "Wins" << endl;
+        cout << "Human Wins" << endl;
     } else if (winner == &computer) {
-        cout <<computer.getName() << "Wins" << endl;
+        cout << "Computer Wins" << endl;
     } else {
         cout<< "Tie" << endl;
     }
