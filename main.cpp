@@ -1,5 +1,5 @@
-#include "Human.h"
 #include "Player.h"
+#include "Human.h"
 #include "Referee.h"
 #include "Computer.h"
 #include <string>
@@ -7,7 +7,16 @@
 using namespace std;
 
 int main(){
-    Player();
-    Referee();
-
+    Referee referee1;
+    Human one("human");
+    Computer computer;
+    Player* winner = referee1.refGame(&one, &computer);
+    if (winner == &one) {
+        cout << one.getName() << "Wins" << endl;
+    } else if (winner == &computer) {
+        cout <<computer.getName() << "Wins" << endl;
+    } else {
+        cout<< "It's a Tie" << endl;
+    }
+    return 0;
 }
