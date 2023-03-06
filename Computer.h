@@ -7,12 +7,12 @@ using namespace std;
 class Computer : public Player{
     private:
     string thisName = "Computer";
-    char compMove = "R";
+    char compMove = 'R';
     
     public:
-    Commputer();
+    Computer();
     char makeMove();
-    string getName()
+    string getName();
     ~Computer();
 };
 #endif
