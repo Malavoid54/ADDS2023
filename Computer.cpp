@@ -3,7 +3,7 @@
 using namespace std;
 
 char Computer::makeMove() {
-    char compMove = "R";
+    char compMove = 'R';
     return compMove;
 }
 

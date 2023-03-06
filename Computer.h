@@ -10,9 +10,7 @@ class Computer : public Player{
     char compMove = 'R';
     
     public:
-    Computer();
     char makeMove();
     string getName();
-    ~Computer();
 };
 #endif
