@@ -5,7 +5,10 @@
 using namespace std;
 
 class Human : public Player {
+    private:
+    string thisName;    
     public:
+    Human(string thisName = "Human");
         char makeMove();
         string getName();  
 }; 

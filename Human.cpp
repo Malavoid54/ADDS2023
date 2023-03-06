@@ -4,6 +4,10 @@
 using namespace std;
 
 
+Human::Human(string name){
+    thisName = thisName;
+}
+
 char Human::makeMove() {
     char moveinput;
     cout<<"Enter move: ";
@@ -13,8 +17,8 @@ char Human::makeMove() {
 }
 
 string Human::getName(){
-    string humanName;
+    string thisName;
     cout << "Please enter your name: ";
-    cin >> humanName;
-    return name;
+    cin >> thisName;
+    return thisName;
 }
