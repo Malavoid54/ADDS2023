@@ -2,12 +2,12 @@
 #define REFEREE_H
 #include <string>
 using namespace std;
+#include "Player.h"
 
 class Referee{
-    private:
     public:
     Referee();
-    Player * refGame(Player * player1, PLayer * player2);
+    Player * refGame(Player * player1, Player * player2);
 
 };
 #endif

@@ -1,13 +1,13 @@
 #ifndef COMPUTER_H
 #define COMPUTER_H
-#include <string>
+#include "Player.h"
 using namespace std;
+#include <string>
 
-class Computer{
-    private:
-    string move;
+class Computer : public Player{
     public:
-    char dispMove();
+    char makeMove();
+    string getName()
     ~Computer();
 };
 #endif
