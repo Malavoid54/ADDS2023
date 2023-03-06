@@ -18,7 +18,7 @@ char Human::makeMove() {
 
 string Human::getName(){
     string thisName;
-    cout << "Please enter your name: ";
+    cout << "";
     cin >> thisName;
     return thisName;
 }
