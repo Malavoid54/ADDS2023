@@ -16,7 +16,7 @@ int main(){
     } else if (winner == &computer) {
         cout <<computer.getName() << "Wins" << endl;
     } else {
-        cout<< "It's a Tie" << endl;
+        cout<< "Tie" << endl;
     }
     return 0;
 }

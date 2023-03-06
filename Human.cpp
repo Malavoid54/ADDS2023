@@ -10,7 +10,7 @@ Human::Human(string name){
 
 char Human::makeMove() {
     char moveinput;
-    cout<<"Enter move: ";
+    cout<<"";
     cin>> moveinput;
     return moveinput;
 
