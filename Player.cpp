@@ -1,7 +1,7 @@
 #include "Player.h"
 
-Player::Player(std::string name) : m_name(name) {}
+Player::Player(std::string name) : name(name) {}
 
 std::string Player::getName() {
-    return m_name;
+    return name;
 }

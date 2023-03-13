@@ -5,9 +5,10 @@
 
 class Move {
 public:
-    Move(std::string name);
-    std::string getName();
-
+    Move(const std::string& name) : m_name(name) {}
+    virtual ~Move() {}
+    virtual bool operator>(const Move& other) const = 0;
+    virtual std::string getName() const { return m_name; }
 private:
     std::string m_name;
 };

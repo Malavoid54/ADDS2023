@@ -1,30 +1,33 @@
-// main.cpp
-
-#include <iostream>
+using namespace std;
+#include "Player.h"
 #include "Human.h"
 #include "Computer.h"
+#include "Move.h"
 #include "Referee.h"
 
-int main() {
-    Human human1("Player 1");
-    Human human2("Player 2");
-    Computer computer("Computer");
 
+#include <iostream>
+#include <vector>
+#include <string>
+#include <ctime>
+#include <cstdlib>
+
+
+
+using namespace std;
+
+int main()
+{
+    // Set up the game
     Referee referee;
+    Human humanPlayer;
+    Computer computerPlayer;
 
-    Player* winner;
+    // Play a round
+    Player* winner = referee.refGame(&humanPlayer, &computerPlayer);
 
-    std::cout << "Human vs Human game:\n";
-    winner = referee.refGame(&human1, &human2);
-    std::cout << "The winner is: " << winner->getName() << "\n\n";
-
-    std::cout << "Human vs Computer game:\n";
-    winner = referee.refGame(&human1, &computer);
-    std::cout << "The winner is: " << winner->getName() << "\n\n";
-
-    std::cout << "Computer vs Computer game:\n";
-    winner = referee.refGame(&computer, &computer);
-    std::cout << "The winner is: " << winner->getName() << "\n\n";
+    // Output the winner's name
+    cout << winner->getName() << " wins!" << endl;
 
     return 0;
 }
